@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Space_Mono, Lexend_Deca } from "next/font/google";
 import "./globals.css";
+
+const spaceMono = Space_Mono({
+  variable: "--font-space-mono",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const lexendDeca = Lexend_Deca({
+  variable: "--font-lexend-deca",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+// Lexend Deca is used for the body text
+// Space Mono is used for the code blocks
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${spaceMono.variable} ${lexendDeca.variable} antialiased`}
       >
         {children}
       </body>
