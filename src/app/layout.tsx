@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Space_Mono, Lexend_Deca } from "next/font/google";
 import "./globals.css";
+import Nav from "./components/Nav";
+import CTA from "./components/CTA";
+import Footer from "./components/Footer";
 
 const spaceMono = Space_Mono({
   variable: "--font-space-mono",
@@ -41,7 +44,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${spaceMono.variable} ${lexendDeca.variable} antialiased`}
       >
+      <Nav />
         {children}
+        <CTA />
+        <Footer />
       </body>
     </html>
   );
