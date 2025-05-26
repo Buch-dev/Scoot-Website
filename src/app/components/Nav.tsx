@@ -58,7 +58,10 @@ function Nav() {
         className="flex items-center justify-between gap-[58.18px]"
         ref={logoRef}
       >
-        <Logo className="md:w-[107.817px] md:h-[28.56px]" />
+        <Link href={"/"}>
+          <Logo className="md:w-[107.817px] md:h-[28.56px]" />
+        </Link>
+
         <nav
           className="hidden md:flex items-center justify-center gap-8"
           ref={linksRef}
