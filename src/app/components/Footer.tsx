@@ -55,19 +55,19 @@ function Footer() {
         <nav className="flex flex-col items-center gap-4 md:flex-row md:gap-8">
           <Link
             className="space-mono text-[15px] font-bold leading-[25px] hover:text-[#FCB72B] transition-colors"
-            href={"/"}
+            href={"/about"}
           >
             About
           </Link>
           <Link
             className="space-mono text-[15px] font-bold leading-[25px] hover:text-[#FCB72B] transition-colors"
-            href={"/"}
+            href={"/location"}
           >
             Location
           </Link>
           <Link
             className="space-mono text-[15px] font-bold leading-[25px] hover:text-[#FCB72B] transition-colors"
-            href={"/"}
+            href={"/careers"}
           >
             Careers
           </Link>
