@@ -148,7 +148,7 @@ function FAQ() {
                   <div
                     key={qIdx}
                     ref={(el) => { cardRefs.current[cardIdx] = el; }}
-                    className="w-full bg-[#F2F5F9] overflow-hidden transition-all duration-300"
+                    className="w-full bg-[#F2F5F9] overflow-hidden transition-all duration-300 hover:bg-[#FFF4DF]"
                   >
                     <button
                       className="w-full flex items-center justify-between p-8 focus:outline-none"
