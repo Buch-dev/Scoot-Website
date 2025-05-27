@@ -51,7 +51,10 @@ function Footer() {
         ref={logoNavRef}
         className="flex flex-col items-center gap-[41.44px] md:flex-row md:gap-[58.58px]"
       >
-        <Logo color="#fff" width={107.817} height={28.56} />
+        <Link href={"/"}>
+          <Logo color="#fff" width={107.817} height={28.56} />
+        </Link>
+
         <nav className="flex flex-col items-center gap-4 md:flex-row md:gap-8">
           <Link
             className="space-mono text-[15px] font-bold leading-[25px] hover:text-[#FCB72B] transition-colors"
